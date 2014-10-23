@@ -1,0 +1,19 @@
+
+<!--===CARROUSEL===-->
+<div id="slides_control">
+    <div class="container full-container">
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}">
+                <div class="carousel-caption">
+                    <h4>Slide {{$index + 1}}</h4>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+<!--===END-CARROUSEL===-->
+
+<div class="main-body container">
+
+</div>

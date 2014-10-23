@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html lang="en" data-ng-app="sodalabs" ng-controller="load" scroll class="no-js" ng-class="{'overflow-hidden':display}"> <!--<![endif]-->
+
+    <head>
+        <title>Soda-Labs</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--===Styles===-->
+        <link rel="stylesheet" href="bower_components/Bootflat/css/site.min.css">
+        <link rel="stylesheet" href="app.css"/>
+        <!--===End-Styles===-->
+        <!--Awesome-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--End Awesome-->
+        <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script> 
+
+    </head>
+    <body>
+        <!--Loader-->
+        <div ng-show="display" >            
+            <div id="loading" ng-class="{'load-hidden':load}">
+                <div id="load-animation">
+                    <div id="gif"></div>
+                </div>        
+            </div>             
+        </div>
+
+        <!--==== MENU ====-->
+        <div id="wrap-main">        
+            <div id="navbar-soda">
+                <div class="navbar container">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#">
+                                    <!--LOGO-->
+                                    <img src="assets/logo/LOJOI+Daz.png" alt="" style="height:180%;"/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <form class="navbar-form navbar-right" ng-controller="languaje" style="margin-top: 25px;">                            
+                                <div class="form-group">
+                                    <a href="" ng-click="changeLanguage('en')" ng-show="idioma === 'es'">
+                                        <i class="fa fa-flag-o" style="color: #EBEFF0"></i> English?</a> 
+                                    <a href="" ng-click="changeLanguage('es')" ng-show="idioma === 'en'">
+                                        <i class="fa fa-flag-o" style="color: #EBEFF0"></i> Español?</a> 
+                                </div>
+                                <div class="form-group">
+                                </div>                            
+                            </form>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            <div id="menu-main" ng-controller="menu" style="background-color: rgba(236,240,241,0.9);" ng-class="{'navbar-fixed-top':hideMenu}">
+                <nav class="navbar container menu-main" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-align-justify"></span>
+                            </button>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav" ng-repeat="menu in menus">  
+                                <!--DINAMICO-->
+                                <li class="active" ng-if="menu.submenu1 === null" >                           
+                                    <a class="title-menu" href="#{{menu.route}}">
+                                        <strong>{{'menu.navmenu.' + menu.item| translate}}</strong>
+                                    </a>                           
+                                </li>
+
+                                <li class="dropdown" ng-if="menu.submenu1 !== null">
+                                    <a href="#" class="dropdown-toggle title-menu">
+                                        <strong>{{'menu.navmenu.' + menu.item| translate}}</strong>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li ng-repeat="submenu1 in menu.submenu1">
+                                            <a href="#">{{'menu.submenu.' + submenu1.item| translate}}</a>
+                                        </li>         
+                                    </ul>
+                                </li>   
+                                <!--DINAMICO-->
+                            </ul>                              
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+            <!--==== END MENU ====-->
+
+            <!--==== CONTENT ====-->
+            <div ng-view></div>
+            <!--==== END CONTENT ====-->
+            <div id="separator"></div>
+
+            <!--==== FOOTER ====-->        
+            <div id="footer-main" ng-include="'includes/footer.html'"></div>            
+            <!--==== FOOTER ====-->
+        </div>
+    </body>
+    <!-- In production use:
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+    -->
+
+    <!-- Bower components -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/Bootflat/js/site.min.js"></script> 
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- End Bower -->
+    <!-- Componentes de Aplicacion -->
+    <script src="app.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>  
+    <!-- Componentes de Aplicacion -->	
+    <!-- Modules -->   
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="menu/menu.js"></script>
+    <script src="home/home.js"></script>
+    <script src="translate/translate.js"></script>    
+    <!-- End Modules -->  
+
+    <!--CDN-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+    <!--End-CDN-->
+
+</html>
