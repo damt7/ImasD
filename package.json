@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Front-End de la aplicación visual de la spinoff I+D Soluciones Informáticascd ",
   "repository": "https://github.com/angular/angular-seed",
-  "main": "app.js"
+  "main": "app.js",
   "license": "MIT",
   "devDependencies": {
     "karma": "~0.10",
