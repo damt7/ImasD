@@ -16,11 +16,9 @@ html,body{
 
 /*MAIN-BODY*/
 .main-body{
-    min-height: 400px;
+    min-height: 450px;
     background-color: white;
     border-radius: 25px;
-    padding:10px;
-    padding-bottom:150px; 
     margin-top: 8px;
     -webkit-box-shadow: 0px 3px 10px #999;
     -moz-box-shadow: 0px 3px 10px #999;
@@ -113,6 +111,7 @@ html,body{
     margin-top: 30px;
     color: lightgray;    
     text-align: center;
+    min-height: 100px;
 }
 
 #footer-main div:last-child>.article-footer{
@@ -152,6 +151,7 @@ div#loading{
 /*Carrusel*/
 .carousel-control.right,.carousel-control.left{
     background: none !important;
+    z-index: 12;
 }
 
 /*full-container*/
@@ -174,4 +174,42 @@ div#loading{
 
 .carousel-indicators .active {
     background-color: gray;
+}
+
+.carousel-caption{
+    color: inherit !important;
+    text-shadow: none !important;
+    left: 0 !important;
+    top: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+/*BANER*/
+.banner-main{
+    height: 180px;    
+}
+
+/*Thumbnail*/
+.thumbnail{
+    min-height: 500px;
+}
+
+.thumbnail > div.caption{
+    min-height: 205px;
+}
+
+.thumbnail > div.caption>p.justify{
+    min-height: 100px;    
+}
+
+/*DEFAULT METRICS*/
+
+.top-default{
+    margin-top: 25px;
+}
+
+.justify{
+    text-align: justify;
 }

@@ -1,16 +1,17 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('sodalabs', [
+angular.module('imasd', [
     'ngRoute',
-    'sodalabs.menu',
+    'imasd.menu',
     'myApp.view1',
     'myApp.view2',
     'myApp.version',
-    'sodalabs.home',
+    'imasd.home',
     'pascalprecht.translate',
-    'sodalabs.translate',
-    'ui.bootstrap'
+    'imasd.translate',
+    'ui.bootstrap',
+    'imasd.about'
 ])
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.otherwise({redirectTo: '/home'});

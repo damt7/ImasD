@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('sodalabs.menu', ['ngRoute'])
+angular.module('imasd.menu', ['ngRoute'])
 
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.when('/menu', {
@@ -20,6 +20,10 @@ angular.module('sodalabs.menu', ['ngRoute'])
                         "item": "about",
                         "route": null,
                         "submenu1": [
+                            {
+                                "item": "AboutUs",
+                                "route": "/about"
+                            },
                             {
                                 "item": "mission",
                                 "route": "/view1"
@@ -60,20 +64,6 @@ angular.module('sodalabs.menu', ['ngRoute'])
                             },
                             {
                                 "item": "architectures",
-                                "route": "/view1"
-                            },
-                            {
-                                "item": "products",
-                                "route": "/view1"
-                            }
-                        ]
-                    },
-                    {
-                        "item": "products",
-                        "route": null,
-                        "submenu1": [
-                            {
-                                "item": "activos",
                                 "route": "/view1"
                             }
                         ]

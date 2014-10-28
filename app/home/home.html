@@ -6,7 +6,8 @@
             <slide ng-repeat="slide in slides" active="slide.active">
                 <img ng-src="{{slide.image}}">
                 <div class="carousel-caption">
-                    <h4>Slide {{$index + 1}}</h4>
+                    <h2>{{'slides.title.' + slide.title| translate}}</h2>
+                    <p style="font-size: large">{{'slides.content.' + slide.content| translate}}</p>
                 </div>
             </slide>
         </carousel>
@@ -14,6 +15,48 @@
 </div>
 <!--===END-CARROUSEL===-->
 
-<div class="main-body container">
-
+<div class="main-body container">   
+    <div class="wrap-thumb top-default">
+        <div class="row">
+            <div class="col-sm-6 col-md-4" ng-repeat="thumb in thumbs">
+                <div class="thumbnail">
+                    <img class="img-rounded" src="{{thumb.image}}" style="height: 282px">
+                    <div class="caption text-center">
+                        <h3>{{'home.thumbs.title.'+thumb.title|translate}}</h3>
+                        <p class="justify">{{'home.thumbs.content.'+thumb.content|translate}}</p>
+                        <p><a href="#" class="btn btn-success" role="button">Ver</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+    <!--    <div class="thumbnail">
+            <img class="img-rounded" src="http://alevardi.files.wordpress.com/2013/01/android-developer-tools-logo-512.png" >
+            <div class="caption text-center">
+                <h3>Thumbnail label</h3>
+                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
+                <p><a href="#" class="btn btn-normal" role="button">Button</a> <a href="#" class="btn btn-normal" role="button">Button</a></p>
+            </div>
+        </div>-->
+<!--</div>
+<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img class="img-rounded" src="http://dartgoogle.files.wordpress.com/2014/06/polymer-wide-retina-preview.png">
+        <div class="caption text-center">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
+            <p><a href="#" class="btn btn-normal" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+    </div>
+</div>-->
+<!--<div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+        <img class="img-rounded" src="http://logopond.com/logos/307eba9e17feef7bc158916232489106.png">
+        <div class="caption text-center">
+            <h3>Thumbnail label</h3>
+            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
+            <p><a href="#" class="btn btn-normal" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+        </div>
+    </div>
+</div>     -->
