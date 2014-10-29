@@ -17,7 +17,7 @@ home.controller('home', ['$scope', function($scope) {
 
         /*===Carousel===*/
         //Intervalo de espera entre slideshows
-        $scope.myInterval = 3000;
+        $scope.myInterval = 5000;
         $scope.slides = [
             {
                 image: 'assets/carousel/slides-home/Imagen1.png',
@@ -50,8 +50,8 @@ home.controller('home', ['$scope', function($scope) {
             },
             {
                 image:'assets/img-thumbs/thumbs-home/polymer.png',
-                title:'metodology',
-                content:'metodology'
+                title:'changeParadigms',
+                content:'changeParadigms'
             }
         ];
         

@@ -169,11 +169,11 @@ div#loading{
 }
 
 .carousel-indicators li {
-    border: 1px solid #2F2F2F;
+    border: 1px solid gray;
 }
 
 .carousel-indicators .active {
-    background-color: gray;
+    background-color: #8CC152;
 }
 
 .carousel-caption{
@@ -183,7 +183,7 @@ div#loading{
     top: 15%;
     padding-left: 20%;
     padding-right: 20%;
-    text-align: center;
+    text-align: justify;
 }
 
 /*BANER*/
@@ -212,4 +212,30 @@ div#loading{
 
 .justify{
     text-align: justify;
+}
+
+.border-left{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; 
+}
+
+.border-right{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px; 
+}
+
+.main{
+    min-height: 450px;
+    background-color: white; 
+    margin-top: 8px;
+    -webkit-box-shadow: 1px 3px 10px #999;
+    -moz-box-shadow: 1px 3px 10px #999;
+}
+
+.panel-nav{
+    min-height: 450px;
+    background-color: white; 
+    margin-top: 8px;
+    -webkit-box-shadow: -1px 3px 10px #999;
+    -moz-box-shadow: -1px 3px 10px #999;
 }

@@ -39,7 +39,7 @@ app.config(function($translateProvider) {
             title: {
                 quality: 'Calidad y Estilo',
                 whyWeb: '¿Por qué web?',
-                tecnology: 'Tecnologia de Punta'
+                tecnology: 'Tecnología de Punta'
             },
             content: {
                 quality: 'La funcionalidad y el aspecto visual van de la mano, \n\
@@ -56,17 +56,22 @@ app.config(function($translateProvider) {
         home: {
             thumbs: {
                 title: {
-                    metodology: 'Nuestra metodología',
-                    appModern:'Aplicaciones Modernas'
+                    metodology: 'Nuestra Metodología',
+                    appModern:'Aplicaciones Modernas',
+                    changeParadigms:'Cambiando Paradigmas'
                 },
                 content: {
-                    metodology: 'En I + D Soluciones Informáticas trabajamos \n\
+                    metodology: 'En I+D Soluciones Informáticas trabajamos \n\
                     de manera continua y ágil, conozca un poco más de como \n\
                     aplicamos nuestras metodologías y filosofías.',
                     appModern:'Entérese porque su empresa debe de adquirir una \n\
                     aplicación web para llevar sus procesos administrativos y\n\
-                    operacionales, aquí le contamos cuales son las ventajas y \n\
-                    desventajas de tenerlas en su negocio.'
+                    operacionales, aquí le contamos cuales son las ventajas \n\
+                    de tenerlas en su negocio.',                    
+                    changeParadigms: 'En I+D Soluciones informáticas trabajamos \n\
+                    todos los días para cambiar los aspectos comunes del desarrollo \n\
+                    tradicional y ofrecer soluciones de mejor calidad haciendo uso\n\
+                    de la creatividad de nuestro grupo de trabajo.'
                 }
             }
         }
@@ -119,11 +124,13 @@ app.config(function($translateProvider) {
             thumbs: {
                 title: {
                     metodology: null,
-                    appModern:null
+                    appModern:null,
+                    changeParadigms:null
                 },
                 content: {
                     metodology: null,
-                    appModern:null
+                    appModern:null,
+                    changeParadigms:null
                 }
             }
         }
