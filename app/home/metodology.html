@@ -1,0 +1,39 @@
+<div class="banner-main">
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 panel-nav border-left"></div>
+        <div class="col-md-9">        
+            <!--Contenido-->
+            <div class=" main border-right">
+                <div class="row">                    
+                    <div class="col-md-12 adjust-text">                        
+                        <div class="page-header">
+                            <h3>
+                                {{'home.thumbs.thumbsPages.metodology.title.' + dictionary_key| translate }}
+                                <small>I+D</small>
+                            </h3>
+                        </div>
+
+                        <p>{{'home.thumbs.thumbsPages.metodology.content.agilDevelopment.' + 0| translate }}</p>
+                        
+                        <h4>{{'home.thumbs.thumbsPages.metodology.subtitle.objetives'| translate }}</h4>
+                        
+                        <ul>
+                            <li ng-repeat='paragrap in [0, 1, 2, 3]'>
+                                {{'home.thumbs.thumbsPages.metodology.content.objetives.' + paragrap| translate }}
+                            </li>
+                        </ul>
+
+                        <p>{{'home.thumbs.thumbsPages.metodology.content.agilDevelopment.' + 1| translate }}</p>
+                        
+                        <p>{{'home.thumbs.thumbsPages.metodology.content.agilDevelopment.' + 2| translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

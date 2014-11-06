@@ -16,11 +16,12 @@ angular.module('imasd', [
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.otherwise({redirectTo: '/home'});
             }])
-
-        .directive("scroll",function($window) {
+        
+        /*Directivas*/
+        .directive("scroll", function($window) {
             return function(scope, element, attrs) {
                 angular.element($window).bind("scroll", function() {
-                    if (this.pageYOffset >= 90) {                        
+                    if (this.pageYOffset >= 90) {
                         scope.hideMenu = true;
                     } else {
                         scope.hideMenu = false;
@@ -29,15 +30,14 @@ angular.module('imasd', [
                 });
             };
         })
-
-        .controller('load', ['$scope', '$timeout',function($scope, $timeout) {
+        
+        /*Controladores*/
+        .controller('load', ['$scope', '$timeout', function($scope, $timeout) {
                 $scope.load = false;
                 $scope.display = true;
-
                 $timeout(function() {
                     $scope.load = true;
                 }, 2500);
-
                 $timeout(function() {
                     $scope.display = false;
                 }, 3000);

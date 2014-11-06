@@ -1,8 +1,12 @@
 /* app css stylesheet */
 
-html,body{
+/*@import url(http://fonts.googleapis.com/css?family=Abel);
+
+*/html,body{
     background-color: rgba(238,238,238,0.9); 
     height: 100%;
+    /*    font-family:'Abel', sans-serif !important;
+        font-size: medium;*/
 }
 
 .overflow-hidden{
@@ -225,11 +229,30 @@ div#loading{
 }
 
 .main{
-    min-height: 450px;
-    background-color: white; 
-    margin-top: 8px;
-    -webkit-box-shadow: 1px 3px 10px #999;
-    -moz-box-shadow: 1px 3px 10px #999;
+    padding-bottom: 30px;
+    margin-left: -6px;
+    min-height: 450px !important;
+    background-color: white !important; 
+    margin-top: 8px !important;
+    -webkit-box-shadow: 1px 3px 10px #999 !important;
+    -moz-box-shadow: 1px 3px 10px #999 !important;
+}
+
+.adjust-text{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.adjust-text-general{
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
 }
 
 .panel-nav{
@@ -238,4 +261,36 @@ div#loading{
     margin-top: 8px;
     -webkit-box-shadow: -1px 3px 10px #999;
     -moz-box-shadow: -1px 3px 10px #999;
+}
+
+/*Custom Nab-tabs*/
+
+.nav-tabs>li>a:hover {
+    cursor: pointer;    
+}
+
+.nav-tabs>li.active>a {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-tabs>li>a {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.absolute-tab .nav-tabs {
+    border-radius: 0; 
+    -webkit-border-radius: 0; 
+    -moz-border-radius: 0;
+
+    border-top-right-radius: 25px;
+    -webkit-border-top-right-radius:25px;
+    -moz-border-top-right-radius:25px;
+}
+
+.absolute-tab .nav-tabs>li:first-child>a {
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
 }

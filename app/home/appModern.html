@@ -1,0 +1,39 @@
+<div class="banner-main">
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 panel-nav border-left"></div>
+        <div class="col-md-9">        
+            <!--Contenido-->
+            <div class=" main border-right absolute-tab">
+                <div class="row">                    
+                    <div class="col-md-12"> 
+
+                        <tabset>
+                            <tab ng-repeat="tab in tabs" 
+                                 heading="{{'home.thumbs.thumbsPages.appModern.subtitle.' + tab.title| translate}}" 
+                                 active="tab.active" disabled="tab.disabled">
+                                <div class='adjust-text-general'>
+                                    
+                                    <h4>{{'home.thumbs.thumbsPages.appModern.subtitle.webApp'| translate}}</h4>
+                                    
+                                    <p ng-repeat="iterator in [0]">
+                                        {{'home.thumbs.thumbsPages.appModern.content.' + tab.title + '.webApp.' + iterator|translate}}                                   
+                                    </p><br />
+                                    
+                                    <h4>{{'home.thumbs.thumbsPages.appModern.subtitle.nativeApp'| translate}}</h4>
+                                    
+                                    <p ng-repeat="iterator in [0]">
+                                        {{'home.thumbs.thumbsPages.appModern.content.' + tab.title + '.nativeApp.' + iterator|translate}}
+                                    </p>
+                                </div>
+                            </tab>
+                        </tabset>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

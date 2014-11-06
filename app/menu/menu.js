@@ -25,11 +25,7 @@ angular.module('imasd.menu', ['ngRoute'])
                                 "route": "/about"
                             },
                             {
-                                "item": "mission",
-                                "route": "/view1"
-                            },
-                            {
-                                "item": "vision",
+                                "item": "misionVision",
                                 "route": "/view1"
                             },
                             {
@@ -82,5 +78,5 @@ angular.module('imasd.menu', ['ngRoute'])
             }])
 
         .controller('footer', ['$scope', function($scope) {
-                
+
             }]);
