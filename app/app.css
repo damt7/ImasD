@@ -220,7 +220,11 @@ div#loading{
 
 .border-left{
     border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px; 
+    border-bottom-left-radius: 25px;         
+}
+
+.panel-nav{
+    background-color: white !important;
 }
 
 .border-right{
@@ -293,4 +297,8 @@ div#loading{
     border-radius:0;
     -webkit-border-radius:0;
     -moz-border-radius:0;
+}
+
+.red{
+    background-color: springgreen !important;
 }

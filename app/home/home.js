@@ -75,7 +75,7 @@ home.controller('home', ['$scope', function($scope) {
     }]);
 
 home.controller('metodology', ['$scope', function($scope) {
-        $scope.dictionary_key='agilDevelopment';
+        $scope.dictionary_key = 'agilDevelopment';
     }]);
 
 home.controller('appModern', ['$scope', function($scope) {
@@ -96,5 +96,5 @@ home.controller('appModern', ['$scope', function($scope) {
     }]);
 
 home.controller('changeParadigms', ['$scope', function($scope) {
-        $scope.dictionary_key='changeParadigms';
+        $scope.dictionary_key = 'changeParadigms';
     }]);

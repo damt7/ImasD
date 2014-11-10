@@ -4,26 +4,22 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3 panel-nav border-left"></div>
-        <div class="col-md-9">        
-            <!--Contenido-->
-            <div class=" main border-right">
-                <div class="row">                    
-                    <div class="col-md-12 adjust-text">                        
-                        <div class="page-header">
-                            <h3>
-                                {{'home.thumbs.thumbsPages.changeParadigms.title.' + dictionary_key| translate }}
-                                <small>I+D</small>
-                            </h3>
-                        </div>
-                        <span ng-repeat="paragraph in [0, 1, 2, 3]">
-                            <p>{{'home.thumbs.thumbsPages.changeParadigms.content.changeParadigms.' + paragraph| translate }}</p>
-                        </span>
-                        <br />
-                        <a href="#">{{'home.thumbs.thumbsPages.changeParadigms.content.changeParadigms.' + 4| translate }}</a>
-                    </div>
+        <panel-left></panel-left>
+
+        <panel-main>
+            <div class="adjust-text"> 
+                <div class="page-header">
+                    <h3>
+                        {{'home.thumbs.thumbsPages.changeParadigms.title.' + dictionary_key| translate }}
+                        <small>I+D</small>
+                    </h3>
                 </div>
+                <span ng-repeat="paragraph in [0, 1, 2, 3]">
+                    <p>{{'home.thumbs.thumbsPages.changeParadigms.content.changeParadigms.' + paragraph| translate }}</p>
+                </span>
+                <br />
+                <a href="#">{{'home.thumbs.thumbsPages.changeParadigms.content.changeParadigms.' + 4| translate }}</a>
             </div>
-        </div>
+        </panel-main>
     </div>
 </div>

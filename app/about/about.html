@@ -2,26 +2,19 @@
 
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-3 panel-nav border-left"></div>
-        <div class="col-md-9">        
-            <!--Contenido-->
-            <div class=" main border-right">
-                <div class="row">                    
-                    <div class="col-md-12 adjust-text">                        
-                        <div class="page-header">
-                            <h3>
-                                {{'about.aboutUs.title.' + dictionary_key| translate }}
-                                <small>I+D</small>
-                            </h3>
-                        </div>
-                        <span ng-repeat="paragraph in [0, 1, 2, 3]">
-                            <p>{{'about.aboutUs.content.aboutUs.' + paragraph| translate }}</p>
-                        </span>
-                    </div>
-                </div>
+<container>
+    <panel-left></panel-left>
+    <panel-main>
+        <div class="adjust-text">
+            <div class="page-header">
+                <h3>
+                    {{'about.aboutUs.title.' + dictionary_key| translate }}
+                    <small>I+D</small>
+                </h3>
             </div>
+            <span ng-repeat="paragraph in [0, 1, 2, 3]">
+                <p>{{'about.aboutUs.content.aboutUs.' + paragraph| translate }}</p>
+            </span>
         </div>
-    </div>
-</div>
+    </panel-main>
+</container>

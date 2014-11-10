@@ -32,7 +32,7 @@
                 </div>        
             </div>             
         </div>
-        
+
         <!--==== MENU ====-->
         <div id="wrap-main">        
             <div id="navbar-soda">
@@ -50,10 +50,7 @@
                         <div class="collapse navbar-collapse" id="navbar-collapse">
                             <form class="navbar-form navbar-right" style="margin-top: 25px;">                            
                                 <div class="form-group">
-                                    <a href="" ng-click="changeLanguage('en')" ng-show="idioma === 'es'">
-                                        <i class="fa fa-flag-o" style="color: #EBEFF0"></i> English?</a> 
-                                    <a href="" ng-click="changeLanguage('es')" ng-show="idioma === 'en'">
-                                        <i class="fa fa-flag-o" style="color: #EBEFF0"></i> Español?</a> 
+                                   
                                 </div>                           
                             </form>
                         </div>                       
@@ -118,17 +115,23 @@
             <!--==== FOOTER ====-->
         </div>
     </body>
-    <!-- In production use:
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-    -->
 
     <!-- Bower components -->
-    <script src="bower_components/angular/angular.min.js"></script>
+    <!--    <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/Bootflat/js/site.min.js"></script> 
+        <script src="bower_components/angular-translate/angular-translate.min.js"></script>    
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!-- End Bower -->
+
+    <!--Development Bower-->
+    <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/Bootflat/js/site.min.js"></script> 
-    <script src="bower_components/angular-translate/angular-translate.min.js"></script>    
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- End Bower -->
+    <script src="bower_components/angular-translate/angular-translate.js"></script>    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!--End-Development Bower-->
+
     <!-- Componentes de Aplicacion -->
     <script src="app.js"></script>
     <script src="components/version/version.js"></script>

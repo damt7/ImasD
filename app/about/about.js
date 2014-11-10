@@ -21,7 +21,7 @@ about.config(['$routeProvider', function($routeProvider) {
 //            templateUrl: 'about/about.html',
 //            controller: 'about'
 //        });
-        
+
     }]);
 
 about.controller('about', ['$scope', function($scope) {

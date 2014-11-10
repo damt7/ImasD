@@ -16,7 +16,7 @@ angular.module('imasd', [
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.otherwise({redirectTo: '/home'});
             }])
-        
+
         /*Directivas*/
         .directive("scroll", function($window) {
             return function(scope, element, attrs) {
@@ -28,6 +28,37 @@ angular.module('imasd', [
                     }
                     scope.$apply();
                 });
+            };
+        })
+
+        .directive('panelLeft', function() {
+            return {
+                restrict: 'E',
+                template: '<div class="col-md-3 panel-nav border-left" ng-transclude></div>',
+                link: function(scope, elem, attrs) {
+                    scope.$watch(function() {
+                        scope.height = $('.main.border-right').css('height');
+                        $('.panel-nav.border-left').css('height', scope.height);
+                    });
+
+                },
+                transclude:true
+            };
+        })
+
+        .directive('panelMain', function() {
+            return {
+                restrict: 'E',
+                templateUrl: 'templates/panel/partial-panel.html',
+                transclude:true
+            };
+        })
+        
+        .directive('container', function() {
+            return {
+                restrict: 'E',
+                templateUrl: 'templates/panel/container.html',
+                transclude:true
             };
         })
         
