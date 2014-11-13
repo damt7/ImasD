@@ -5,23 +5,18 @@ about.config(['$routeProvider', function($routeProvider) {
             templateUrl: 'about/about.html',
             controller: 'about'
         });
-//        $routeProvider.when('/about', {
-//            templateUrl: 'about/about.html',
-//            controller: 'about'
-//        });
-//        $routeProvider.when('/about', {
-//            templateUrl: 'about/about.html',
-//            controller: 'about'
-//        });
-//        $routeProvider.when('/about', {
-//            templateUrl: 'about/about.html',
-//            controller: 'about'
-//        });
-//        $routeProvider.when('/about', {
-//            templateUrl: 'about/about.html',
-//            controller: 'about'
-//        });
-
+        $routeProvider.when('/misionVision', {
+            templateUrl: 'about/misionVision.html',
+            controller: 'misionVision'
+        });
+        $routeProvider.when('/technologies', {
+            templateUrl: 'about/technologies.html',
+            controller: 'technologies'
+        });
+        $routeProvider.when('/alliances', {
+            templateUrl: 'about/alliances.html',
+            controller: 'alliances'
+        });
     }]);
 
 about.controller('about', ['$scope', function($scope) {
@@ -29,14 +24,9 @@ about.controller('about', ['$scope', function($scope) {
         $scope.dictionary_key = 'aboutUs';
     }]);
 
-about.controller('mision', ['$scope', function($scope) {
+about.controller('misionVision', ['$scope', function($scope) {
         //Clave de diccionario.
         $scope.dictionary_key = 'mision';
-    }]);
-
-about.controller('vision', ['$scope', function($scope) {
-        //Clave de diccionario.
-        $scope.dictionary_key = 'vision';
     }]);
 
 about.controller('technologies', ['$scope', function($scope) {

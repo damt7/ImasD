@@ -385,6 +385,47 @@ app.config(function($translateProvider) {
                 subtitle: {},
                 content: {}
             }
+        },
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="banner-es">
+        banner:{
+            title:{
+                aboutUS : 'Acerca de Nosotros',
+                misionAvision : 'Mision y Vision',
+                technology : 'Tecnologías',
+                aliances : 'Alianzas',
+                CustomDevelopment : 'Desarrollo a la Medida',
+                softwareFactory : 'Fabrica de Software',
+                teaching : 'Capacitaciones',
+                consulting : 'Consultoría',
+                architectDevelopment : 'Desarrollo de Arquitecturas',
+                clients : 'Clientes',
+                contact : 'Contáctenos'
+            },
+            paragrap:{
+                aboutUS : 'Lea como surgimos, quienes somos, cual es nuestro enfoque y como nos desempeñamos.',
+                misionAvision : 'En I+D siempre seguimos un horizonte, el horizonte de la calidad. \n\
+                                 Lea acerca de nuestro objetivo, cuáles son nuestras aspiraciones y como lo haremos para lograrlo.',
+                technology : 'Conozca un poco de las tecnologías que manipulamos, su impacto tecnológico y sus características de compatibilidad.',
+                aliances : 'Para nosotros es importante crear relaciones comerciales y/o productivas, estas son\n\
+                            algunas de las entidades aliadas con las cuales trabajamos conjuntamente y de cara a la \n\
+                            Innovación y el Desarrollo de las empresas del país.',
+                CustomDevelopment : 'Conozca las ventajas de sistematizar sus procesos administrativos o industriales de una manera \n\
+                                     personalizada haciendo uso de las tecnologías de la información, como lo hacemos, bajo qué proceso \n\
+                                     lo hacemos y que metodologías aplicamos.',
+                softwareFactory : 'Establecer un margen de producción constante en los servicios tecnológicos ofrecidos a un cliente a \n\
+                                   través del tiempo haciendo uso de nuestras metodologías y tecnologías es importante. Aquí le mostraremos de que se trata.',
+                teaching : 'Para nosotros es importante que nuestros clientes obtengan en medida una noción de cómo lo hacemos y bajo qué condiciones lo hacemos. \n\
+                            Brindar el Know-How suficiente para lograr un desempeño autosuficiente en su negocio es prioridad.',
+                consulting : 'Aquí le mostraremos la forma en que podemos cambiar los paradigmas de su grupo de desarrolladores, las arquitecturas y \n\
+                              las filosofías que podemos transferir y a las cuales nos aferramos.',
+                architectDevelopment : 'Es importante hacer uso de la ingeniería de requisitos o requerimientos, conozca un poco del porque y en qué aspectos \n\
+                                        nos enfocamos y tenemos en cuenta para desarrollarlas.',
+                clients : 'Somos una empresa en crecimiento, y parte de nuestra filosofía es la de dar atención prioritaria y de calidad a cada uno de nuestros clientes,\n\
+                           aquí le mostramos algunos de ellos con los cuales hemos realizado trabajos conjuntamente.',
+                contact : 'En I+D Soluciones informáticas damos prioridad a sus opiniones, tenemos un equipo dedicado a atenderle,\n\
+                           resolver sus inquietudes y responder positivamente ante el problema que se le presente.'
+            }
         }
         //</editor-fold>
 
@@ -532,6 +573,16 @@ app.config(function($translateProvider) {
                 title: {},
                 subtitle: {},
                 content: {}
+            }
+        },
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="banner-en">
+        banner:{
+            title:{
+                
+            },
+            paragrap:{
+                
             }
         }
         //</editor-fold>

@@ -11,7 +11,10 @@ angular.module('imasd', [
     'pascalprecht.translate',
     'imasd.translate',
     'ui.bootstrap',
-    'imasd.about'
+    'imasd.about',
+    'imasd.contact',
+    'imasd.servicios',
+    'imasd.clients'
 ])
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.otherwise({redirectTo: '/home'});
@@ -42,7 +45,7 @@ angular.module('imasd', [
                     });
 
                 },
-                transclude:true
+                transclude: true
             };
         })
 
@@ -50,18 +53,30 @@ angular.module('imasd', [
             return {
                 restrict: 'E',
                 templateUrl: 'templates/panel/partial-panel.html',
-                transclude:true
+                transclude: true
             };
         })
-        
+
+        .directive('banner', function() {
+            return {
+                restrict: 'E',
+                scope: {
+                    title: '@',
+                    paragrap: '@',
+                    img: '@'
+                },
+                templateUrl: 'templates/banner-templates/banner.html'
+            };
+        })
+
         .directive('container', function() {
             return {
                 restrict: 'E',
                 templateUrl: 'templates/panel/container.html',
-                transclude:true
+                transclude: true
             };
         })
-        
+
         /*Controladores*/
         .controller('load', ['$scope', '$timeout', function($scope, $timeout) {
                 $scope.load = false;

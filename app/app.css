@@ -191,8 +191,28 @@ div#loading{
 }
 
 /*BANER*/
+.title-banner{
+    color: #6C7A89;
+}
+
+.paragrap-banner{
+    font-size: 19px;
+    color: #6C7A89;
+    text-align: justify
+}
+
 .banner-main{
     height: 180px;    
+}
+
+.container-img-banner{
+    display: block; 
+    position: absolute;  
+}
+
+.img-banner{
+    width: 340px;
+    margin-top: 5px;
 }
 
 /*Thumbnail*/
@@ -225,6 +245,7 @@ div#loading{
 
 .panel-nav{
     background-color: white !important;
+    opacity: 0.97;
 }
 
 .border-right{
@@ -235,11 +256,13 @@ div#loading{
 .main{
     padding-bottom: 30px;
     margin-left: -6px;
-    min-height: 450px !important;
+    min-height: 550px !important;
     background-color: white !important; 
     margin-top: 8px !important;
+    margin-right: -16px;
     -webkit-box-shadow: 1px 3px 10px #999 !important;
     -moz-box-shadow: 1px 3px 10px #999 !important;
+    opacity: 0.97;
 }
 
 .adjust-text{
@@ -283,22 +306,54 @@ div#loading{
     font-weight: 600;
 }
 
-.absolute-tab .nav-tabs {
-    border-radius: 0; 
-    -webkit-border-radius: 0; 
-    -moz-border-radius: 0;
+.nav-tabs {
+    border-radius: 0 !important; 
+    -webkit-border-radius: 0 !important; 
+    -moz-border-radius: 0 !important;
 
-    border-top-right-radius: 25px;
-    -webkit-border-top-right-radius:25px;
-    -moz-border-top-right-radius:25px;
+    border-top-right-radius: 25px !important;
+    -webkit-border-top-right-radius:25px !important;
+    -moz-border-top-right-radius:25px !important;
 }
 
-.absolute-tab .nav-tabs>li:first-child>a {
-    border-radius:0;
-    -webkit-border-radius:0;
-    -moz-border-radius:0;
+.nav-tabs>li:first-child>a {
+    border-radius:0 !important;
+    -webkit-border-radius:0 !important;
+    -moz-border-radius:0 !important;
 }
 
 .red{
     background-color: springgreen !important;
+}
+
+/*Grid-Img*/
+.grid-img{
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+img.item-grid-img:hover{
+    box-shadow: 0px 3px 10px #999 ;
+    -webkit-box-shadow: 0px 3px 10px #999 ;
+    -moz-box-shadow: 0px 3px 10px #999 ;
+}
+
+img.item-grid-img{
+    height: 150px;
+    margin: 2px;
+}
+
+.zoom{
+    transition: 0.6s ease;
+    -moz-transition: 0.6s ease; /* Firefox */
+    -webkit-transition: 0.6s ease; /* Chrome - Safari */
+    -o-transition: 0.6s ease; /* Opera */
+}
+.zoom:hover{
+    transform : scale(1.2);
+    -moz-transform : scale(1.2); /* Firefox */
+    -webkit-transform : scale(1.2); /* Chrome - Safari */
+    -o-transform : scale(1.2); /* Opera */
+    -ms-transform : scale(1.2); /* IE9 */
 }

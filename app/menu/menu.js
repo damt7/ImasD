@@ -26,15 +26,15 @@ angular.module('imasd.menu', ['ngRoute'])
                             },
                             {
                                 "item": "misionVision",
-                                "route": "/view1"
+                                "route": "/misionVision"
                             },
                             {
                                 "item": "technologies",
-                                "route": "/view1"
+                                "route": "/technologies"
                             },
                             {
                                 "item": "alliances",
-                                "route": "/view1"
+                                "route": "/alliances"
                             }
                         ]
                     },
@@ -44,34 +44,34 @@ angular.module('imasd.menu', ['ngRoute'])
                         "submenu1": [
                             {
                                 "item": "development",
-                                "route": "/view1"
+                                "route": "/development"
                             },
                             {
                                 "item": "factory",
-                                "route": "/view1"
+                                "route": "/factory"
                             },
                             {
                                 "item": "training",
-                                "route": "/view1"
+                                "route": "/training"
                             },
                             {
                                 "item": "consulting",
-                                "route": "/view1"
+                                "route": "/consulting"
                             },
                             {
                                 "item": "architectures",
-                                "route": "/view1"
+                                "route": "/architectures"
                             }
                         ]
                     },
                     {
                         "item": "clients",
-                        "route": null,
+                        "route": "/clients",
                         "submenu1": null
                     },
                     {
                         "item": "contact",
-                        "route": "/view1",
+                        "route": "/contact",
                         "submenu1": null
                     }
                 ];
