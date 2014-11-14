@@ -32,6 +32,15 @@ about.controller('misionVision', ['$scope', function($scope) {
 about.controller('technologies', ['$scope', function($scope) {
         //Clave de diccionario.
         $scope.dictionary_key = 'technologies';
+        
+        //Tecnologias
+        $scope.technologies=[
+        'Ajax','AngularJs','Bootflat','Botstrap','Bower','CSS3','Dojo','Git','Hibernate',        
+        'HTML5','Java','JPA','Yeoman','JQuery','JSON','Jstl-Jsp','Maven','MongoDB',
+        'MsSQL','MySQL','Node','PHP','Spring Roo','Spring Security','Spring tool suite',
+        'Spring','Subversion','XML','Javascript'
+        ];
+        
     }]);
 
 about.controller('alliances', ['$scope', function($scope) {

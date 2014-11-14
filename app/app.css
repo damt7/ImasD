@@ -328,7 +328,7 @@ div#loading{
 
 /*Grid-Img*/
 .grid-img{
-    margin-left: 30px;
+    margin-left: 40px;
     margin-top: 30px;
     padding: 0;
 }
@@ -340,15 +340,13 @@ img.item-grid-img:hover{
 }
 
 img.item-grid-img{
-    height: 150px;
+    width: 150px;
     margin: 2px;
+    border-radius: 5px;
 }
 
 .zoom{
-    transition: 0.6s ease;
-    -moz-transition: 0.6s ease; /* Firefox */
-    -webkit-transition: 0.6s ease; /* Chrome - Safari */
-    -o-transition: 0.6s ease; /* Opera */
+    
 }
 .zoom:hover{
     transform : scale(1.2);

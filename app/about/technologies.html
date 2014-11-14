@@ -1,24 +1,10 @@
-<banner title="{{'banner.title.technology' | translate }}" paragrap="{{'banner.paragrap.technology' | translate }}" img="tecnologias"></banner>
+<banner title="{{'banner.title.technology'| translate }}" paragrap="{{'banner.paragrap.technology'| translate }}" img="tecnologias"></banner>
 
 <container>
     <panel-left></panel-left>
     <panel-main>
-        
-        <div class="grid-img ">
-            <img class="item-grid-img zoom" src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom" src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />
-            <img class="item-grid-img zoom  " src="../assets/banner/about.png" alt="" />           
+        <div class="grid-img">
+            <img ng-repeat="img in technologies" class="item-grid-img zoom" ng-src="../assets/technologies/{{img}}.png" alt="{{img}}"/>
         </div>
-        
-        
-
     </panel-main>
 </container>
