@@ -1,6 +1,18 @@
-<banner title="{{'banner.title.architectDevelopment' | translate }}" paragrap="{{'banner.paragrap.architectDevelopment' | translate }}" img="servicios"></banner>
+<banner title="Arquitecturas" paragrap="Parrafo" img="servicios"></banner>
 
 <container>
     <panel-left></panel-left>
-    <panel-main></panel-main>
+    <panel-main>
+        <div class="adjust-text">
+            <div class="page-header">
+                <h3>
+                    {{'services.architecture.title.architecture'| translate }}
+                    <small>I+D</small>
+                </h3>
+            </div>  
+            <p ng-repeat='paragrap in [0, 1]'>
+                {{'services.architecture.content.architecture.'+paragrap| translate }}
+            </p>
+        </div>
+    </panel-main>
 </container>

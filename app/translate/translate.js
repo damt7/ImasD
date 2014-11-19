@@ -323,58 +323,222 @@ app.config(function($translateProvider) {
             },
             mision: {
                 title: {
-                    mision: null
+                    mision:'Mision'
                 },
                 subtitle: {},
                 content: {
                     mision: {
+                        0:'En el  2020 queremos ser una empresa que este posicionada \n\
+                        en un mercado más robusto imponiendo metodologías agiles en \n\
+                        su desarrollo de una manera creativa y dando solución a las \n\
+                        problemáticas sistemáticas de la industria.'
                     }
-
                 }
             },
             vision: {
-                title: {},
+                title: {
+                    vision:'Vision'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                     vision:{
+                        0:'En ImasD buscamos ser líderes en el mercado del desarrollo \n\
+                        de software siendo reconocidos por nuestro excelente nivel de calidad.',
+                        1:'ImasD es una empresa que tiene sus bases en el grupo de \n\
+                        investigación SODA(Sistemas en Operaciones y Desarrollo Aplicado) \n\
+                        de la Universidad Cooperativa De Colombia. En el cual de mano de la \n\
+                        industria ha fortalecido su estructura organizacional y ha ampliado \n\
+                        su conocimiento y experiencia enfocada a la producción y a la \n\
+                        creación de servicios orientado a la solución de necesidades a la \n\
+                        comunidad y a nuestro gremio.',
+                        2:'Nuestro equipo de desarrollo en ImasD está enfocado en la aplicación \n\
+                        de una filosofía de trabajo y estructura organizacional llamada xtreme \n\
+                        programing en la cual todo el equipo de trabajo se integra y tiene \n\
+                        comunicación constante para el buen mantenimiento de la empresa.'
+                    }
+                }
             },
             technologies: {
-                title: {},
+                title: {
+                    technologies:'Tecnologias'
+                },
                 subtitle: {},
                 content: {}
             },
             alliances: {
-                title: {},
+                title: {
+                    alliances:'Alianzas'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    alliances:{
+                        ucc:{
+                            title:{
+                                ucc:'Universidad Cooperativa de Colombia'
+                            },
+                            content:{
+                                ucc:{
+                                    0:'La Universidad Cooperativa de Colombia avanza permanentemente \n\
+                                hacia la excelencia y la acreditación institucional, fortaleciendo \n\
+                                sus relaciones en el país y en el mundo, mejorando su infraestructura \n\
+                                física y tecnológica, innovando en los procesos académicos y los \n\
+                                programas para responder a las necesidades de los territorios y sus \n\
+                                comunidades. Estamos comprometidos con la construcción de un mejor \n\
+                                país para todos; somos “Una Universidad, todo un país”.'
+                                }
+                            }
+                        },
+                        imolko:{
+                            title:{
+                                imolko:'Imolko'
+                            },
+                            content:{
+                                imolko:{
+                                    0:'Imolko es una empresa de clase mundial, fundada en Octubre \n\
+                                del año 2001, dedicada a ayudar a PYMES y emprendedores con ganas \n\
+                                de crecer a utilizar Internet como medio de mercadeo, ventas y servicio. \n\
+                                Mediante el desarrollo de canales de comunicaciones autorizados y perdurables \n\
+                                con sus comunidades relacionadas.'
+                                }
+                            }
+                        },
+                        udea:{
+                            title:{
+                                udea:'Universidad de Antioquia'
+                            },
+                            content:{
+                                udea:{
+                                    0:'La Universidad de Antioquia es una institución estatal del orden departamental, \n\
+                                    que desarrolla el servicio público de la Educación Superior. La Universidad \n\
+                                    de Antioquia tiene por objeto la búsqueda, desarrollo y difusión del conocimiento \n\
+                                    en los campos de las humanidades, la ciencia, las artes, la filosofía, la técnica y \n\
+                                    la tecnología, mediante las actividades de investigación, de docencia y de extensión, \n\
+                                    realizadas en los programas de Educación Superior de pregrado y de posgrado con metodologías \n\
+                                    presencial, semipresencial, abierta y a distancia, puestas al servicio de una concepción \n\
+                                    integral de hombre.'
+                                }
+                            }
+                        }
+                    }
+                }
             }
         },
         //</editor-fold>
         //<editor-fold defaultstate="collapsed" desc="services-es">
         services: {
             customDevelopment: {
-                title: {},
+                title: {
+                    customDevelopment:'Desarrollo a la medida'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    customDevelopment:{
+                        0:'La sistematización de los procesos administrativos y \n\
+                        productivos de su empresa es una práctica que ha tendido \n\
+                        durante los últimos años. Una empresa que no cuente con un \n\
+                        entorno ni una plataforma que conforme un sistema de información \n\
+                        se atrasará y se rezagará en el mercado abrumador actual.',
+                        1:'Para que la tecnología que usa su empresa sea personalizada \n\
+                        y atienda con conformidad las necesidades de su empresa a nivel de \n\
+                        sistemas de información deberá de estar Desarrollada a la Medida, \n\
+                        estas aplicaciones generan valor y ayudan a su compañía a estar \n\
+                        en la vanguardia y a alcanzar sus topes de producción para alcanzar \n\
+                        el mayor rendimiento.',
+                        2:'En I+D Soluciones informáticas brindamos a las empresas, \n\
+                        ya sea del sector público o privado,  la posibilidad de encontrar \n\
+                        la solución a sus problemas con la ayuda de herramientas tecnológicas \n\
+                        de última generación que permitan mejorar el rendimiento y la eficiencia \n\
+                        de sus procesos de negocio haciendo uso de nuestra creatividad, poniendo \n\
+                        en práctica Nuestras Metodologías y usando tecnología de punta.'
+                    }
+                }
             },
             factory: {
-                title: {},
+                title: {
+                    factory:'Fabrica de software'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    factory:{
+                        0:'Nuestra compañía ofrece un servicio que  busca establecer \n\
+                        una determinada “capacidad de producción” de servicios tecnológicos \n\
+                        para un cliente a través del tiempo, todo esto utilizando las mejores \n\
+                        prácticas en desarrollo de software. Al usar esta capacidad, el cliente \n\
+                        debe de estar en la posibilidad de resolver  las diversas necesidades \n\
+                        de tecnología que se presentan en su empresa adoptando nuevos desarrollos \n\
+                        a la medida.',
+                        1:'Los servicios de Fábrica de Software ofrecidos por I + D soluciones \n\
+                        informáticas, son estructurados alrededor de las mejores prácticas y modelos \n\
+                        de desarrollo ágil e integración continua, empleando tecnología totalmente \n\
+                        orientada a web, servicios de testing, integración continua y frameworks de \n\
+                        seguridad altamente confiables.'
+                    }
+                }
             },
             training: {
-                title: {},
+                title: {
+                    training:'Capacitaciones'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    training:{
+                        0:'La educación es un valor agregado con el cual las personas \n\
+                        y empresas, ya sean públicas o privadas, aumentan sus capacidades \n\
+                        técnicas o habilidades por medio de la formación continua.  En I + D \n\
+                        soluciones informáticas nos preocupamos por la educación, y siguiendo \n\
+                        esta línea de pensamiento, hemos diseñado una serie de capacitaciones \n\
+                        orientadas a todos aquellos que deseen cambiar los paradigmas de desarrollo \n\
+                        tradicional y estén dispuestos a aventurarse en el mundo del desarrollo de \n\
+                        aplicaciones bajo la filosofía de las metodologías ágiles e integración \n\
+                        continua, donde encontrarán no solo una poderosa herramienta de trabajo, \n\
+                        sino también un mundo lleno de oportunidades.'
+                    }
+                }
             },
             consulting: {
-                title: {},
+                title: {
+                    consulting:'Consultoría'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    consulting:{
+                        0:'Las mejores prácticas en la ingeniería de software están marcadas \n\
+                        por diferentes factores los cuales hay que tener en cuenta si se requiere \n\
+                        implementar sistemas informáticos en su compañía ya sea para procesos \n\
+                        administrativos o productivos.'
+                    }
+                }
             },
             architecture: {
-                title: {},
+                title: {
+                    architecture:'Desarrollo de arquitecturas'
+                },
                 subtitle: {},
-                content: {}
+                content: {
+                    architecture:{
+                        0:'En muchos casos el desarrollo solo se requiere como \n\
+                        una opción a tener en cuenta y muchas veces no se cuenta \n\
+                        con el equipo especializado de personas para abstraer el \n\
+                        problema y/o modelar lo que se necesita dependiendo de la \n\
+                        necesidad, contamos con un equipo de analistas que incluso \n\
+                        pueden aportar valor adicional e importante haciendo de su \n\
+                        cadena de procesos productivos o administrativos un laboratorio \n\
+                        en el cual el analista pueda ver claramente cuál es su necesidad \n\
+                        y en base a ello, modelarle el problema.',
+                        1:'Al momento de garantizar el éxito de un proyecto, la \n\
+                        Ingeniería de requerimientos cumple un papel primordial en \n\
+                        el proceso, debido a que es de vital importancia definir \n\
+                        claramente lo que se desea producir, en contrapartida con \n\
+                        lo que se puede producir.  Es así como  en I+D soluciones \n\
+                        informáticas ofrecemos un servicio de ingeniería de requerimientos \n\
+                        donde nuestra tarea consiste en la generación de especificaciones \n\
+                        correctas que describan con claridad, sin ambigüedades, en forma \n\
+                        consistente, clara y compacta, el comportamiento del sistema, \n\
+                        con el fin de minimizar los problemas futuros relacionados con \n\
+                        su desarrollo, implementando arquitecturas escalables y abiertas \n\
+                        a posibles requerimientos futuros.'
+                    }
+                }
             }
         },
         //</editor-fold>
@@ -426,6 +590,13 @@ app.config(function($translateProvider) {
                 contact : 'En I+D Soluciones informáticas damos prioridad a sus opiniones, tenemos un equipo dedicado a atenderle,\n\
                            resolver sus inquietudes y responder positivamente ante el problema que se le presente.'
             }
+        },
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="contact-es">
+        contact:{
+            title:{},
+            content:{},
+            fields:{} 
         }
         //</editor-fold>
 
@@ -584,9 +755,15 @@ app.config(function($translateProvider) {
             paragrap:{
                 
             }
+        },
+        //</editor-fold>
+        //<editor-fold defaultstate="collapsed" desc="contact-es">
+        contact:{
+            title:{},
+            content:{},
+            fields:{}
         }
         //</editor-fold>
-
     };
 
     $translateProvider.translations('en', diccionario_en);

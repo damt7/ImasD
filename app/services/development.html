@@ -1,6 +1,18 @@
-<banner title="{{'banner.title.CustomDevelopment' | translate }}" paragrap="{{'banner.paragrap.CustomDevelopment' | translate }}" img="servicios"></banner>
+<banner title="{{'banner.title.CustomDevelopment'| translate }}" paragrap="{{'banner.paragrap.CustomDevelopment'| translate }}" img="servicios"></banner>
 
 <container>
     <panel-left></panel-left>
-    <panel-main></panel-main>
+    <panel-main>
+        <div class="adjust-text">
+            <div class="page-header">
+                <h3>
+                    {{'services.customDevelopment.title.customDevelopment'| translate }}
+                    <small>I+D</small>
+                </h3>
+            </div>  
+            <p ng-repeat='paragrap in [0, 1, 2]'>
+                {{'services.customDevelopment.content.customDevelopment.'+paragrap| translate }}
+            </p>
+        </div>
+    </panel-main>
 </container>

@@ -56,17 +56,17 @@ home.controller('home', ['$scope', function($scope) {
         /*Thumbnails*/
         $scope.thumbs = [
             {
-                image: 'assets/img-thumbs/thumbs-home/brackets.jpg',
+                image: 'assets/img-thumbs/thumbs-home/metodology.png',
                 title: 'metodology',
                 content: 'metodology'
             },
             {
-                image: 'assets/img-thumbs/thumbs-home/developer.png',
+                image: 'assets/img-thumbs/thumbs-home/appModern.png',
                 title: 'appModern',
                 content: 'appModern'
             },
             {
-                image: 'assets/img-thumbs/thumbs-home/polymer.png',
+                image: 'assets/img-thumbs/thumbs-home/changeParadigms.png',
                 title: 'changeParadigms',
                 content: 'changeParadigms'
             }

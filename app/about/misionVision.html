@@ -3,5 +3,21 @@
 
 <container>
     <panel-left></panel-left>
-    <panel-main></panel-main>
+    <panel-main>
+        <div class='adjust-text'>
+            <h3>
+            {{'about.mision.title.mision'|translate}}
+        </h3>
+        <p>
+            {{'about.mision.content.mision.0'|translate}}
+        </p>
+        
+        <h3>
+            {{'about.vision.title.vision'|translate}}
+        </h3>
+        <p ng-repeat="paragrap in [0,1,2]">
+            {{'about.vision.content.vision.'+paragrap | translate}}
+        </p>
+        </div>
+    </panel-main>
 </container>
