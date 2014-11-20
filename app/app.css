@@ -347,7 +347,7 @@ img.item-grid-img{
 }
 
 .zoom{
-    
+
 }
 .zoom:hover{
     transform : scale(1.2);
@@ -355,4 +355,15 @@ img.item-grid-img{
     -webkit-transform : scale(1.2); /* Chrome - Safari */
     -o-transform : scale(1.2); /* Opera */
     -ms-transform : scale(1.2); /* IE9 */
+}
+
+/*Menu flotante*/
+.float-menu{
+    margin-top: 51px;
+    height: 50px;
+    background-color: tomato;
+}
+
+.fixed{
+    position: fixed;
 }
