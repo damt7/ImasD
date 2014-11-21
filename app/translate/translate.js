@@ -539,6 +539,13 @@ app.config(function($translateProvider) {
                         a posibles requerimientos futuros.'
                     }
                 }
+            },
+            menuFloatServices:{
+                item1:'Desarrollo a la medida',
+                item2:'Fabrica de software',
+                item3:'Capacitaciones',
+                item4:'Consultoria',
+                item5:'Desarrollo de arquitecturas'
             }
         },
         //</editor-fold>

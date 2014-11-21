@@ -3,7 +3,8 @@
 /*@import url(http://fonts.googleapis.com/css?family=Abel);
 
 */html,body{
-    background-color: rgba(238,238,238,0.9); 
+    /*background-color: rgba(238,238,238,0.9);*/ 
+    background-color: #EDEDED; 
     height: 100%;
     /*    font-family:'Abel', sans-serif !important;
         font-size: medium;*/
@@ -359,11 +360,19 @@ img.item-grid-img{
 
 /*Menu flotante*/
 .float-menu{
-    margin-top: 51px;
-    height: 50px;
-    background-color: tomato;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .fixed{
     position: fixed;
+}
+
+.item-float{
+    display: block;
+    background-color: #EBEFF0;
+    margin-bottom: 5px;
+    padding: 5px;
+    color:#6C7A89;
+    padding-left: 20px;
 }

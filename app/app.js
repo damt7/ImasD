@@ -91,8 +91,18 @@ angular.module('imasd', [
                 template: '<div class="col-md-3 panel-nav border-left" ng-transclude></div>',
                 link: function(scope, elem, attrs) {
                     scope.$watch(function() {
+                        //Altura Autoajustable
                         scope.height = $('.main.border-right').css('height');
                         $('.panel-nav.border-left').css('height', scope.height);
+                        
+                        //Menu Flotante, panel derecho.
+                        scope.heightMenu = parseInt($('.float-menu').css('height'));
+                        scope.marginTop = parseInt($('.float-menu').css('margin-top'));
+                        scope.heigthContainer = parseInt($('.main.border-right').css('height'));
+                        scope.scrollPercent = $(window).scrollTop() / ($(document).height() - $(window).height());
+
+                        $('.float-menu').css('margin-top', scope.scrollPercent * (scope.heigthContainer-scope.heightMenu));
+
                     });
 
                 },
@@ -103,53 +113,7 @@ angular.module('imasd', [
         .directive('menuFloat', function() {
             return {
                 restrict: 'E',
-                template: '<div class="float-menu fixed">Menu</div>',
-                link: function($scope, elem, attrs) {
-                    $scope.initialOffset=parseInt($('.main.border-right').css('height'));
-                    
-                    $scope.$watch(function() {
-
-                        $scope.heigthContainer;
-                        $scope.offsetTop;
-                        $scope.heightMenu;
-                        $scope.maxHeight;
-
-                        metrics();
-//                    Calcular altura de contenedor y offset top y bot
-                        function metrics() {
-                            $scope.heigthContainer = parseInt($('.main.border-right').css('height'));
-                            $scope.offsetTop = $('.float-menu').offset().top;
-                            $scope.heightMenu =parseInt($('.float-menu').css('height'));
-                            
-                            
-                            console.log("Metrics");
-                            console.log("Ofset Top");
-
-                            console.log($scope.offsetTop);
-                            console.log("Height Container");
-
-                            console.log($scope.heigthContainer);
-
-                            console.log("Height Menu");
-
-                            console.log($scope.heightMenu);
-                            
-                            $scope.maxHeight=$scope.initialOffset+$scope.heigthContainer-$scope.heightMenu-400;
-                            console.log('Max Height');
-                            console.log($scope.maxHeight);
-
-                        }
-
-                        if ($scope.offsetTop>$scope.maxHeight) {
-                            console.log("se paso");
-                            $('.float-menu').removeClass('fixed');
-                            $('.float-menu').css('margin-top',$scope.heigthContainer-100);
-                        }
-                    });
-
-
-                },
-                transclude: true
+                templateUrl: 'templates/panel/menu-float.html'
             };
         })
 
