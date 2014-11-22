@@ -541,11 +541,11 @@ app.config(function($translateProvider) {
                 }
             },
             menuFloatServices:{
-                item1:'Desarrollo a la medida',
-                item2:'Fabrica de software',
-                item3:'Capacitaciones',
-                item4:'Consultoria',
-                item5:'Desarrollo de arquitecturas'
+                development:'Desarrollo a la medida',
+                factory:'Fabrica de software',
+                training:'Capacitaciones',
+                consulting:'Consultoria',
+                architectures:'Desarrollo de arquitecturas'
             }
         },
         //</editor-fold>
