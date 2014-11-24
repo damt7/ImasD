@@ -603,7 +603,9 @@ app.config(function($translateProvider) {
         contact:{
             title:{},
             content:{},
-            fields:{} 
+            fields:{
+                
+            } 
         }
         //</editor-fold>
 

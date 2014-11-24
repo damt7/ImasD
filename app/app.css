@@ -275,6 +275,12 @@ div#loading{
     line-height: 25px;
 }
 
+.adjust-img{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .adjust-text-general{
     padding-top: 30px;
     padding-left: 25px;
