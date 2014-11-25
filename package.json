@@ -2,7 +2,7 @@
     "name": "ImasD",
     "private": true,
     "version": "0.0.0",
-    "description": "Front-End de la aplicación visual de la spinoff I+D Soluciones Informáticascd ",
+    "description": "Front-End de la aplicación visual de la spinoff I+D Soluciones Informáticas",
     "repository": "https://github.com/angular/angular-seed",
     "main": "app.js",
     "license": "MIT",
