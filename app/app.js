@@ -14,7 +14,8 @@ angular.module('imasd', [
     'imasd.about',
     'imasd.contact',
     'imasd.servicios',
-    'imasd.clients'
+    'imasd.clients',
+    'imasd.contactFactory'
 ])
         .config(['$routeProvider', function($routeProvider) {
                 $routeProvider.otherwise({redirectTo: '/home'});
