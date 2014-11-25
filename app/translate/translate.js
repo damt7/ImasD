@@ -604,7 +604,10 @@ app.config(function($translateProvider) {
             title:{},
             content:{},
             fields:{
-                
+                issue:"Asunto",
+                email:"Email",
+                send:"Enviar",
+                message:"Escriba su mensaje aqui..."
             } 
         }
         //</editor-fold>
